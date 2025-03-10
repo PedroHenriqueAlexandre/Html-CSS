@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Permanent+Marker&family=Tangerine:wght@400;700&display=swap');
+   @font-face {
+    font-family: 'idoid';
+    src: url(fontes/idroid.otf);
+   }
+   h1::after{
+    content: '\1F525';
+    font-family: "Bodoni Moda", serif;
+   }
+   h2:hover::after{
+    content: '\1F525';
+   }
+    h2{
+    font-family: 'idoid';
+    }
+    mark{
+        background-color: aquamarine;
+    }
+
+    div.video{
+        position: relative;
+        background-color: rgb(4, 209, 245);
+        height: 500px;
+        width: 25%;
+        margin: auto;
+    }
+
+    div.video > iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+height: 90%;
+width: 90%;
+    }
+</style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito</h2>
+    <p>Nesta frase, estarei colocando uma frase em negrito. Usando a tag STRONG: No caso, é <strong>essa daqui</strong></p> &#x2728;
+    <h2>Itálico</h2>
+    <p>Agora vai ser adicionado uma frase em enfase. Usando a tag EM: <em>É essa daqui</em>
+        <br>&#x2750;</br>
+        <h2>Marcaçoes</h2>
+        </p
+    p>Nesta parte, a palavra a seguir, estará em destaque, usando a tag MARK: <mark>PERSONA</mark></p>
+    <p><mark>E aqui tambem</mark></p>
+    <h2>Teste grande e pequeno</h2>
+    <p>Neste momento, usando SMALL, a palavra vai ficar <small>pequena</small> e <big>big</big>, ficará grande</p>
+    <h2>Texto excluido</h2>
+    <p>Podemos deixar um texto como se <del>ele foi excluido</del> usando a tag DEL, mas que ainda deve-se ver</p>
+    <h2>Testo incluido</h2>
+    <p>Podemos colocar um texto, deixando claro que foi <ins>incluido depois</ins> usando a tag INS</p>
+    <h2>Texto sobrescrito</h2>
+    <p>A conta x<sup>5</sup> + 10 = 20. Nesse caso, se utiliza a tag SUP</p>
+    <h2>Texto Subscrito</h2>
+    <p> O H<sub>2</sub>O. Nesse caso, a tecla é SUB</p>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xFtdhQoOMH0?si=JoHHpwm71a13Irhy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

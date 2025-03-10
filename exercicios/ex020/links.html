@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LInks</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+color: red;
+font-weight: bold;
+text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        
+        a::before{
+            content: '[⇨]';
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgray;
+        }
+        a::after{
+            content: '[⇦]';
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://youtu.be/DN-Dcwq4i2g?si=Jh2sfW3535zVeQXV" target="_blank" class="especial">⇨Abertura divinity 2</a></li>
+        <li><a href="https://youtu.be/xFtdhQoOMH0?si=3Wew-dv3-0Hh-PVH" class="especial">Abertura Persona 3</a></li>
+        <li><a href="https://youtu.be/KClnQgyPacU?si=SeURTejMC47xmkGv">Abertura Persona 4</a></li>
+    </ul>
+</body>
+</html>

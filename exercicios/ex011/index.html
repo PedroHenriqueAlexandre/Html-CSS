@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a colocar imagens, para diferentes dispositivos</title>
+</head>
+<body>
+    <h1>Imagens para diferentes dispositivos</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou diminua o tamnho do navegador</p>
+    <picture> 
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/imagem-m.png" type="image/png">
+    <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Veja estes audios</h1>
+    <audio src="midia/When The Smoke Clears - Evening Telecast.mp3" controls autoplay></audio>
+    <h1>Mais compatibilidade</h1>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/When The Smoke Clears - Evening Telecast.mp3" type="audio/mpeg">
+        <source src="midia/When The Smoke Clears - Evening Telecast.ogg" type="audio/ogg">
+        <source src="midia/When The Smoke Clears - Evening Telecast.wav" type="audio/wav">
+        <p>Infelizmente, o navegador não tem compatibilidade com o audio <a href="midia/When The Smoke Clears - Evening Telecast.mp3"> clique aqui para baixar</a></p>
+    </audio>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem vaiavel">
+    </picture>
+<audio>
+    <source src="midia/When The Smoke Clears - Evening Telecast.mp3" type="audio/mpeg" controls>
+</audio>
+</body>
+</html>
