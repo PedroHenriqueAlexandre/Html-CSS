@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço</title>
+    <title>Site astronauta</title>
     <style>
-       body{
+        body{
             margin: 0px;
         }
-        img#fundo{
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-        img#astronauta{
-            position: absolute;
-            top: 500px;
-            left: 1300px;
-        }
+#container{
+    position: relative;
+    height: 100vh;
+background-image: url(espaco.jpg);
+background-size: cover;
+}
+
+#conteudo > img{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
     </style>
 </head>
 <body>
-    <img src="espaco.jpg" alt="Foto de fundo" width="100%" id="fundo">
-    <img src="astronauta.png" alt="" id="astronauta">
+<section id="container">
+    <article id="conteudo">
+<img src="astronauta.png" alt="">
+    </article>
+</section>
 </body>
 </html>
