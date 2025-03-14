@@ -12,6 +12,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
     background-color: black;
@@ -22,6 +23,7 @@ header {
 
 header > h1{
 font-family: "Passion One", sans-serif;
+font-size: 10vw;
 font-weight: bold;
 font-variant: small-caps;
 padding-top: 50px;
@@ -39,14 +41,12 @@ a:hover{
 }
 
 section{
+    font-size: 3.5vw;
+    font-family: "Sriracha";
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-}
-
-section > p{
-    font-family: "Sriracha";
 }
 
 section.normal{
@@ -60,8 +60,9 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.322);
-    width: 400px;
 }
 
 footer{
