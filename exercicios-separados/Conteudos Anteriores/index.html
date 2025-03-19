@@ -11,6 +11,7 @@
         }
         
         caption{
+            padding: 10px;
             background-color: lightgray;
         }
 
@@ -26,8 +27,8 @@
             padding: 10px;
         }
 
-        Td:nth-child(even){
-            background-color: lightblue;
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: lightgray;
         }
 
         th{
