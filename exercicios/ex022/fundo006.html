@@ -15,15 +15,31 @@
            background-attachment: fixed; */
            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
            background-size: cover;
+           margin: 0px;
         }
 
         main{
+            position: relative;
             background-color: white;
             max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
             border-radius: 15px;
+          
+        }
+        main > h1{
+            position: sticky;
+            top: -2px;
+            text-align: center;
+        background-color: rgb(43, 42, 42);
+            color: rgb(255, 255, 255);
+            margin-top: -11px;
+            margin-right: -11.5px;
+            margin-left: -10px;
+
         }
     </style>
 </head>

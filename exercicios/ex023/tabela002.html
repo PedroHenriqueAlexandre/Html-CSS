@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead th{
+            color: white;
+            background-color: rgb(51, 50, 50);
+        }
+
+        th{
+            font-weight: bolder;
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tfoot, tfoot th{
+            color: white;
+            background-color: rgb(51, 50, 50);
+        }
+        td.num{
+            text-align: right;
+        }
+
+        div > tr th{
+            background-color: rgb(51, 50, 50);
+        }
+
+        th{
+            color: white;
+          background-color: rgb(51, 50, 50);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION(legenda/titulo das tabelas)
+            THEAD(cabeça)
+            Tr, Td, Th
+            TBODY(corpo,conteudo)
+            Tr, Td, Th
+            TFOOT(rodapé)
+            Tr, Td, Th
+    -->
+            <table>
+                <caption>Populações das unidades federativas do Brasil
+                </caption>
+                <thead>
+                    <tr>
+                        
+                            <th scope="col">Unidade Federativa</th>
+                        
+                        
+                            <th scope="col" style="width: 50px;">População</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">45 919 049</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="num">21 168 791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 264 943</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de habitantes</th>
+                        <td class="num"><strong>84.352.783</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <h1>Uso de tabelas pequenas</h1>
+           <table>
+            <caption>Populações das unidades federativas do Brasil
+            </caption>
+            <tr>
+                    <th scope="col">Unidade Federativa</th>
+                    <th scope="col" style="width: 50px;">População</th>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td style="background-color: rgb(51, 50, 50); color: white;">84.352.783</td>
+            </tr>
+           </table>
+</body>
+</html>
