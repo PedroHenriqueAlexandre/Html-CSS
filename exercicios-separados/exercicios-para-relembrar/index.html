@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 533px;
+            height: 300px;
+        }
+        a{
+            color: rgb(194, 16, 16);
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veja o Formulário abaixo:</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" placeholder="Escreva o nome aqui." maxlength="10">
+        <br>
+
+        <br>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha"><br>
+        <br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+
+        <select name="sec" id="isec">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SP">São Paulo</option>
+        </select>
+    </form>
+    <h1>Escolha uma opção</h1>
+    <nav>
+        <ul>
+            <li><a href="chris-editado.jpg" target="agentes"><p>Clique</p></a></li>
+            <li>
+                <a href="claire-redfield-editada.jpg" target="agentes"><p>Retorne</p></a>
+                <a href=""></a>
+            </li>
+        </ul>
+    </nav>
+    <iframe src="claire-redfield-editada.jpg" frameborder="0" name="agentes"></iframe>
+</body>
+</html>
