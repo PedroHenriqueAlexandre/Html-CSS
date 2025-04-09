@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+   background-image: url('../../claire-redfield-editada.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}

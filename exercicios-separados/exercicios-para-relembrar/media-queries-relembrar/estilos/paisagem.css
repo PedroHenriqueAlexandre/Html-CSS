@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('../../chris-editado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+ }
