@@ -10,8 +10,27 @@ Extra grande: 1441 pixels ou mais para monitores ultra-wide ou de alta definiç�
 /* Impressora */
 @media print {
     body{
-        background-image: url('../imagens/back-print.jpg');
+        background-image: url('../imagens/back-print.jpg'); /* Desnecessário */
     } 
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
 
     img#telefone{
         display: none;
@@ -32,7 +51,9 @@ Extra grande: 1441 pixels ou mais para monitores ultra-wide ou de alta definiç�
     img#televisão{
         display: none;
     }
+
 }
+
 
 
 /* Tablet */
@@ -101,7 +122,7 @@ Extra grande: 1441 pixels ou mais para monitores ultra-wide ou de alta definiç�
     img#telefone{
         display: none;
     }
-    
+
     img#tablet{
         display: none;
     }
