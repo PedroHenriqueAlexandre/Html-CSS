@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#d3{
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis dolor ullam laudantium, qui architecto veniam magni ab ad expedita quidem! Neque eligendi perspiciatis repellendus totam est dolorum dicta tempora?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, odio recusandae ea, quae a repellendus numquam rerum dolorum accusantium libero impedit ad, dolor beatae adipisci atque? Minima modi non ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aspernatur debitis consequatur quo cum sequi deserunt eveniet, ratione numquam quasi qui cumque atque mollitia blanditiis saepe, iste excepturi veniam itaque?</div>
+        <div class="item" id="d3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam accusantium quaerat nisi, itaque commodi blanditiis, ipsam numquam magni suscipit dignissimos inventore officiis cumque? Repellendus cum maiores quaerat assumenda asperiores pariatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, odio recusandae ea, quae a repellendus numquam rerum dolorum accusantium libero impedit ad, dolor beatae adipisci atque? Minima modi non ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aspernatur debitis consequatur quo cum sequi deserunt eveniet, ratione numquam quasi qui cumque atque mollitia blanditiis saepe, iste excepturi veniam itaque?</div>
+    </div>
+</body>
+</html>
