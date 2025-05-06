@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Grid Layout</title>
+    <style>
+        @media screen and (min-width: 678px) {
+            main{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 100px);
+            grid-auto-rows: 100px;
+            grid-template-areas: "header header header header header header"
+            "aside main main main main main"
+            " footer footer footer footer footer footer";
+            gap: .5rem;
+
+            justify-content: start;
+        }
+        } 
+
+        .item{
+            color: white;
+            font-size: 2em;
+            background-color: lightcoral;
+            border: 1px solid black;
+        }
+
+        header{
+            grid-area: header;
+        }
+        main{
+            grid-area: main;
+        }
+        aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="item">header</header>
+        <main class="item">main</main>
+        <aside class="item">aside</aside>
+        <footer class="item">footer</footer>
+        <section>Bem vindo ao site!</section>
+    </main>
+</body>
+</html>
