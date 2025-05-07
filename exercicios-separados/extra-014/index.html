@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Grid Layout</title>
+    <style>
+        @media screen and (min-width: 678px) {
+            div{
+            display: grid;
+            grid-template-columns: [site-start] 1fr [container-start] 1fr
+            repeat(5, 1fr) [container-end] 1fr [site-end];
+            grid-template-rows: [header-top] 200px [header-bottom] 200px[linha-top] 200px [linha-bottom] 200px [footer-top] 100px [footer-bottom] 100px;
+            gap: .5rem;
+        }
+        } 
+
+        header{
+            grid-column: site;
+            grid-row: header-top / header-bottom;
+        }
+
+        main{
+            grid-column: container;
+            grid-row: linha-top / linha-bottom;
+        }
+
+        footer{
+            grid-row: footer-top / footer-bottom;
+        }
+
+        .item{
+            color: white;
+            font-size: 2em;
+            background-color: lightcoral;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+            <header class="item">header</header>
+            <main class="item">main</main>
+            <aside class="item">aside</aside>
+            <footer class="item">footer</footer>
+        
+    </div>
+</body>
+</html>
